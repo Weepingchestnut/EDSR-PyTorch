@@ -102,6 +102,8 @@ Unpack the tar file to any place you want. Then, change the ```dir_data``` argum
 
 We recommend you to pre-process the images before training. This step will decode all **png** files and save them as binaries. Use ``--ext sep_reset`` argument on your first run. You can skip the decoding part and use saved binaries with ``--ext sep`` argument.
 
+建议在训练之前进行预处理。这一步将解码所有的 **png** 文件，并将它们保存为二进制文件。在第一次运行时使用 ``--ext sep_reset`` 参数。可以跳过解码部分，使用保存的二进制文件和 ``--ext sep`` 参数。
+
 If you have enough RAM (>= 32GB), you can use ``--ext bin`` argument to pack all DIV2K images in one binary file.
 
 You can train EDSR and MDSR by yourself. All scripts are provided in the ``src/demo.sh``. Note that EDSR (x3, x4) requires pre-trained EDSR (x2). You can ignore this constraint by removing ```--pre_train <x2 model>``` argument.

@@ -10,6 +10,7 @@ from trainer import Trainer
 torch.manual_seed(args.seed)
 checkpoint = utility.checkpoint(args)
 
+
 def main():
     global model
     if args.data_test == ['video']:
@@ -28,6 +29,7 @@ def main():
                 t.test()
 
             checkpoint.done()
+
 
 if __name__ == '__main__':
     main()
